@@ -8,11 +8,13 @@ public class Movement : MonoBehaviour
     [SerializeField] InputAction roll;
     [SerializeField] float thrustForce = 10f;
     [SerializeField] float rollForce = 10f;
-
+    
     Rigidbody rb;
+    AudioSource rocketThrust;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rocketThrust = GetComponent<AudioSource>();
     }
 
     void OnEnable()
@@ -32,7 +34,13 @@ public class Movement : MonoBehaviour
     {
         if (thrust.IsPressed())
         {
+            if(!rocketThrust.isPlaying)
+            {
+                rocketThrust.Play();
+            }
             rb.AddRelativeForce(Vector3.up * thrustForce * Time.fixedDeltaTime);
+        } else {
+            rocketThrust.Stop();
         }
     }
 
@@ -51,6 +59,8 @@ public class Movement : MonoBehaviour
 
     private void ApplyRotation(float rotationThisFrame)
     {
+        rb.freezeRotation = true; // Take manual control of rotation
         transform.Rotate(Vector3.forward * rotationThisFrame * Time.fixedDeltaTime);
+        rb.freezeRotation = false; // Resume physics control of rotation
     }
 }
