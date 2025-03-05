@@ -119,6 +119,95 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &264296270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2133856
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8732892
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0416284
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884917331289620477, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_Name
+      value: Dropship_01_Tank_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3168297
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.9989071
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7085442
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70566636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956138743190781188, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_Radius
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506940674431306010, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_Name
+      value: Dropship_01_Tank_Red (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.04318548, y: 0.0071929996, z: -0.0003095405, w: 0.99904114}
-  m_LocalPosition: {x: -4.1928825, y: 4.3930836, z: -9.921812}
+  m_LocalPosition: {x: -4.192881, y: 4.3439484, z: -9.921812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -518,6 +607,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &633772656
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2133856
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8732892
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0416284
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884917331289620477, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_Name
+      value: Dropship_01_Tank_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3168297
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.9989071
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7085442
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70566636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513221549523133767, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956138743190781188, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_Radius
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506940674431306010, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_Name
+      value: Dropship_01_Tank_Red (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,113 +745,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1053682223 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 797434158176125833, guid: 7fedf9c33f1e229408bfdea52352a4cf, type: 3}
-  m_PrefabInstance: {fileID: 1366582546026120705}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1070861965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8104941682141743648, guid: 7fedf9c33f1e229408bfdea52352a4cf, type: 3}
-  m_PrefabInstance: {fileID: 1366582546026120705}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1070861969
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070861965}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cdeb3279fb233a848be531f391fc4105, type: 3}
-  m_Resource: {fileID: 8300000, guid: cdeb3279fb233a848be531f391fc4105, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.483
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1517053335
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +783,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 1053682223}
+    TrackingTarget: {fileID: 1366582546026120706}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
@@ -744,7 +815,7 @@ Transform:
   m_GameObject: {fileID: 1517053335}
   serializedVersion: 2
   m_LocalRotation: {x: 0.04318548, y: 0.0071929996, z: -0.0003095405, w: 0.99904114}
-  m_LocalPosition: {x: -4.1928825, y: 4.3930836, z: -9.921812}
+  m_LocalPosition: {x: -4.192881, y: 4.3439484, z: -9.921812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -921,15 +992,17 @@ PrefabInstance:
     - target: {fileID: 8487973165000922060, guid: 7fedf9c33f1e229408bfdea52352a4cf, type: 3}
       propertyPath: rocketThrust
       value: 
-      objectReference: {fileID: 1070861969}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8104941682141743648, guid: 7fedf9c33f1e229408bfdea52352a4cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1070861969}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fedf9c33f1e229408bfdea52352a4cf, type: 3}
+--- !u!4 &1366582546026120706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2252550234356248494, guid: 7fedf9c33f1e229408bfdea52352a4cf, type: 3}
+  m_PrefabInstance: {fileID: 1366582546026120705}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7027793960133588028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -982,6 +1055,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch_Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 5362171706898613027, guid: 30ec2eb4f7ee3c540b17b67fbc9350b1, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955155291078234060, guid: 30ec2eb4f7ee3c540b17b67fbc9350b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.89
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -995,6 +1076,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2133856
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8732892
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0416284
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677489982463663270, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.22
+      objectReference: {fileID: 0}
     - target: {fileID: 3884917331289620477, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
       propertyPath: m_Name
       value: Dropship_01_Tank_Red
@@ -1039,6 +1136,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7956138743190781188, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: m_Radius
+      value: 1.22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1057,3 +1158,5 @@ SceneRoots:
   - {fileID: 1746438749}
   - {fileID: 1366582546026120705}
   - {fileID: 8851246017338984515}
+  - {fileID: 264296270}
+  - {fileID: 633772656}
