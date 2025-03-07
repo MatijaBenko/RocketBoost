@@ -8,13 +8,14 @@ public class Movement : MonoBehaviour
     [SerializeField] InputAction roll;
     [SerializeField] float thrustForce = 10f;
     [SerializeField] float rollForce = 10f;
+    [SerializeField] AudioClip mainEngine;
     
     Rigidbody rb;
-    AudioSource rocketThrust;
+    AudioSource audioSource;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rocketThrust = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void OnEnable()
@@ -34,13 +35,13 @@ public class Movement : MonoBehaviour
     {
         if (thrust.IsPressed())
         {
-            if(!rocketThrust.isPlaying)
+            if(!audioSource.isPlaying)
             {
-                rocketThrust.Play();
+                audioSource.PlayOneShot(mainEngine);
             }
-            rb.AddRelativeForce(Vector3.up * thrustForce * Time.fixedDeltaTime);
+            rb.AddRelativeForce(thrustForce * Time.fixedDeltaTime * Vector3.up);
         } else {
-            rocketThrust.Stop();
+            audioSource.Stop();
         }
     }
 
