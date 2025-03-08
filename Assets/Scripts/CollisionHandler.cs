@@ -8,16 +8,37 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] AudioClip successSFX;
     [SerializeField] ParticleSystem crashParticles;
     [SerializeField] ParticleSystem successParticles;
+    [SerializeField] Transform playerRocket;
+    [SerializeField] float explosionForce = 500f;
+    [SerializeField] float explosionRadius = 5f;
     AudioSource audioSource;
     bool isControllable = true;
+    bool isCollidable = true;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
-    void OnCollisionEnter(Collision collision)
+    // void Update()
+    // {
+    //     RespondToDebugKeys();
+    // }
+
+    // private void RespondToDebugKeys()
+    // {
+    //     if (Keyboard.current.lKey.wasPressedThisFrame)
+    //     {
+    //         LoadNextLevel();
+    //     }
+    //     else if (Keyboard.current.cKey.wasPressedThisFrame)
+    //     {
+    //         isCollidable = !isCollidable;
+    //     }
+    // }
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (!isControllable) { return; }
+        if (!isControllable || !isCollidable) { return; }
 
         switch (collision.gameObject.tag)
         {
@@ -55,16 +76,29 @@ public class CollisionHandler : MonoBehaviour
         audioSource.PlayOneShot(crashSFX);
         crashParticles.Play();
         GetComponent<Movement>().enabled = false;
+        Explode();
         Invoke(nameof(ReloadLevel), levelLoadDelay);
     }
 
-    void ReloadLevel()
+    private void Explode()
+    {
+        foreach (Transform child in playerRocket)
+        {
+            //Debug.Log("Exploding: " + child.name);
+            child.SetParent(null); // Detach from parent
+            Rigidbody rb = child.gameObject.AddComponent<Rigidbody>(); // Add Rigidbody if not already present
+            rb.useGravity = false;
+            rb.AddExplosionForce(explosionForce, playerRocket.position, explosionRadius); // Apply explosion force
+        }
+    }
+
+    private void ReloadLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex, LoadSceneMode.Single);
     }
 
-    void LoadNextLevel()
+    private void LoadNextLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (currentSceneIndex == SceneManager.sceneCountInBuildSettings)

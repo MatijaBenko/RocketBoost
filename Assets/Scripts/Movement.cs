@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,8 +7,11 @@ public class Movement : MonoBehaviour
     [SerializeField] InputAction roll;
     [SerializeField] float thrustForce = 10f;
     [SerializeField] float rollForce = 10f;
-    [SerializeField] AudioClip mainEngine;
-    
+    [SerializeField] AudioClip mainEngineSFX;
+    [SerializeField] ParticleSystem mainEngineParticles;
+    [SerializeField] ParticleSystem leftEngineParticles;
+    [SerializeField] ParticleSystem rightEngineParticles;
+
     Rigidbody rb;
     AudioSource audioSource;
     void Start()
@@ -35,14 +37,31 @@ public class Movement : MonoBehaviour
     {
         if (thrust.IsPressed())
         {
-            if(!audioSource.isPlaying)
-            {
-                audioSource.PlayOneShot(mainEngine);
-            }
-            rb.AddRelativeForce(thrustForce * Time.fixedDeltaTime * Vector3.up);
-        } else {
-            audioSource.Stop();
+            StartThrusting();
         }
+        else
+        {
+            StopThrusting();
+        }
+    }
+
+    private void StartThrusting()
+    {
+        rb.AddRelativeForce(thrustForce * Time.fixedDeltaTime * Vector3.up);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainEngineSFX);
+        }
+        if (!mainEngineParticles.isPlaying)
+        {
+            mainEngineParticles.Play();
+        }
+    }
+
+    private void StopThrusting()
+    {
+        mainEngineParticles.Stop();
+        audioSource.Stop();
     }
 
     private void ProcessRoll()
@@ -50,12 +69,42 @@ public class Movement : MonoBehaviour
         float rotationInput = roll.ReadValue<float>();
         if (rotationInput < 0)
         {
-            ApplyRotation(rollForce);
+            RotateRight();
         }
         else if (rotationInput > 0)
         {
-            ApplyRotation(-rollForce);
+            RotateLeft();
         }
+        else
+        {
+            StopRotating();
+        }
+    }
+
+    private void RotateRight()
+    {
+        if (!rightEngineParticles.isPlaying)
+        {
+            leftEngineParticles.Stop();
+            rightEngineParticles.Play();
+        }
+        ApplyRotation(rollForce);
+    }
+
+    private void RotateLeft()
+    {
+        if (!leftEngineParticles.isPlaying)
+        {
+            rightEngineParticles.Stop();
+            leftEngineParticles.Play();
+        }
+        ApplyRotation(-rollForce);
+    }
+
+    private void StopRotating()
+    {
+        leftEngineParticles.Stop();
+        rightEngineParticles.Stop();
     }
 
     private void ApplyRotation(float rotationThisFrame)
