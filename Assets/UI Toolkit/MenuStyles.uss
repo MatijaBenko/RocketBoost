@@ -1,0 +1,40 @@
+.header {
+    font-size: 50px;
+    color: rgb(203, 205, 0);
+    -unity-text-align: middle-center;
+    -unity-text-outline-width: 1.5px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    letter-spacing: 25px;
+    word-spacing: 0;
+}
+
+.menu-button {
+    font-size: 225%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    -unity-text-outline-color: rgba(255, 255, 255, 0);
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-font-definition: url("project://database/Assets/Font/Super%20Pancake.ttf?fileID=12800000&guid=3a746501bab03ca4cb0ffe896e5fae3d&type=3#Super Pancake");
+    -unity-font-style: bold;
+    transition-duration: 0.35s;
+    -unity-text-align: upper-center;
+    padding-bottom: 104px;
+    transition-timing-function: linear;
+}
+
+.menu-button:hover {
+    font-size: 235%;
+    -unity-font-definition: url("project://database/Assets/Font/Super%20Pancake.ttf?fileID=12800000&guid=3a746501bab03ca4cb0ffe896e5fae3d&type=3#Super Pancake");
+    -unity-background-image-tint-color: rgb(55, 55, 55);
+    translate: 0 0;
+    scale: 1 1;
+    rotate: -10deg;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(251, 224, 0);
+    transform-origin: center;
+    -unity-text-outline-width: 10px;
+}
