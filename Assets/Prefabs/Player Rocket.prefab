@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 2252550234356248494}
   - component: {fileID: 2424366724384921602}
   - component: {fileID: 7971715142721229130}
+  - component: {fileID: 9018314434749206856}
   - component: {fileID: 4434308399042965957}
   - component: {fileID: 5944614642096771713}
   - component: {fileID: 1668209573636657788}
@@ -406,6 +407,18 @@ MonoBehaviour:
   playerRocket: {fileID: 7597136956470165964}
   explosionForce: 700
   explosionRadius: 2
+--- !u!114 &9018314434749206856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728995388708572499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de64d10982921514494531d19b88f2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &4434308399042965957
 Rigidbody:
   m_ObjectHideFlags: 0

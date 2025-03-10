@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.4867924, g: 0.4867924, b: 0.4867924, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
@@ -2374,6 +2374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: 25, z: 0}
   speed: 0.5
+  delay: 0
 --- !u!4 &549737904 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4358708463251973647, guid: 4ca3c03c6b630464c87364e6edb454fc, type: 3}
@@ -3156,6 +3157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: 25, z: 0}
   speed: 0.5
+  delay: 0
 --- !u!4 &795610410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4358708463251973647, guid: 4ca3c03c6b630464c87364e6edb454fc, type: 3}
@@ -3766,6 +3768,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a41951dc5dfb26c4d9f2e74b27bb583c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ad4e47271285f4498c0af5fdac4e638, type: 2}
     - target: {fileID: 919132149155446097, guid: a41951dc5dfb26c4d9f2e74b27bb583c, type: 3}
       propertyPath: m_Name
       value: Dropship_01_Tank_Red (1)
@@ -6530,6 +6536,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a41951dc5dfb26c4d9f2e74b27bb583c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -4803449312067332711, guid: 047501233d2bcb64fbc12eb56cf2d3c8, type: 3}
     - target: {fileID: 919132149155446097, guid: a41951dc5dfb26c4d9f2e74b27bb583c, type: 3}
       propertyPath: m_Name
       value: Dropship_01_Tank_Red
@@ -6638,7 +6648,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 3e49f5e0f575bf546b8ecfb1da2d3193, type: 3}
   m_Resource: {fileID: 8300000, guid: 3e49f5e0f575bf546b8ecfb1da2d3193, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7407,6 +7417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: 25, z: 0}
   speed: 0.5
+  delay: 0
 --- !u!4 &1943596114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4358708463251973647, guid: 4ca3c03c6b630464c87364e6edb454fc, type: 3}
@@ -8066,7 +8077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.266222
+      value: 12.28
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8074,11 +8085,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.06223709
+      value: -0.059
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.38972563
+      value: 0.7749682
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8086,7 +8097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9209311
+      value: 0.63200027
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalRotation.z
@@ -8098,7 +8109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 134.125
+      value: 78.396
       objectReference: {fileID: 0}
     - target: {fileID: 1647141004565395618, guid: 1fff8671340cadd41826970a1049411c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -8477,6 +8488,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6354053937724073259, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -6141262742250102974, guid: 981dc53f9c78ccd4eb6a545f083bc814, type: 3}
     - target: {fileID: 8506940674431306010, guid: 7fc0bbb49712aa64cb595aecf45aa924, type: 3}
       propertyPath: m_Name
       value: Dropship_01_Tank_Red

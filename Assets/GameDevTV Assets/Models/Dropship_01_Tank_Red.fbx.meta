@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Colour_Palette_Sci_Fi
-    second: {fileID: -4803449312067332711, guid: 5235f3354d55b3047977c1ad1328751a, type: 3}
+    second: {fileID: -4803449312067332711, guid: 047501233d2bcb64fbc12eb56cf2d3c8, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Colour_Palette_Sci_Fi_Roughness
-    second: {fileID: 7515526912956163633, guid: ad39e1743733cb048b438c089ba4ec23, type: 3}
+    second: {fileID: 6057460604720863840, guid: 2506c32f90ed869409734d062d07c67e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,7 @@
     <engine:VisualElement name="LeftSectionContainer" style="flex-grow: 1; width: 45%; height: 100%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(0, 0, 0, 0.6); -unity-background-image-tint-color: rgb(255, 248, 248); margin-left: 50px;">
         <engine:VisualElement name="TitleBox" style="flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/Font/Super%20Pancake.ttf?fileID=12800000&amp;guid=3a746501bab03ca4cb0ffe896e5fae3d&amp;type=3#Super Pancake&quot;); font-size: 32px; justify-content: flex-start; align-items: center; height: 100%; width: 100%; align-content: stretch; flex-shrink: 1;">
             <engine:Label text="Astro boi" name="Title" class="header" style="font-size: 100%; -unity-font-style: normal; white-space: nowrap; text-overflow: clip; -unity-text-align: middle-center; color: rgb(255, 145, 0); -unity-text-outline-width: 8px;" />
-            <engine:VisualElement name="ButtonBox" style="flex-grow: 1; flex-shrink: 1; justify-content: center; padding-bottom: 20%;">
+            <engine:VisualElement name="ButtonBox" style="flex-grow: 1; flex-shrink: 1; justify-content: center; padding-bottom: 20%; padding-top: 20%;">
                 <engine:Button text="Play" name="PlayButton" class="menu-button" />
                 <engine:Button text="Exit" name="ExitButton" class="menu-button" />
             </engine:VisualElement>
